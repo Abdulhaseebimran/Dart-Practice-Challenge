@@ -1,9 +1,11 @@
-void main() {
-  myfun();
-  myfun();
+void main(List<String> args) {
+  printname();
+  printname();
+  printname();
 }
 
-myfun() {
-  print("Hello dart");
-  print("Hello Flutter ! ");
+void printname() {
+  print("Hello flutter !");
+  print("hello haseeb ");
+  print("=================");
 }
