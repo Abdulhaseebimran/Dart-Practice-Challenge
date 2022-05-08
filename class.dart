@@ -1,27 +1,20 @@
 void main(List<String> args) {
-  final mypen = Pen();
-  mypen.color = "Red";
-  print(mypen.color);
-  mypen.type = "gelpen";
-  print(mypen.type);
-  mypen.printmsg();
-
-  final mypen2 = Pen();
-  mypen2.color = "Blue";
-  print(mypen2.color);
-  mypen2.type = "bollpen";
-  print(mypen2.type);
-
-  print(mypen.price);
-  print(mypen2.price);
+  StudentData odj1 = new StudentData();
+  print(odj1.name);
+  print(odj1.sec);
+  print(odj1.age);
+  odj1.learn();
 }
 
-class Pen {
-  String color = "";
-  String type = "";
-  int price = 10;
+class StudentData {
+  String name = "Abdul haseeb";
+  String sec = "A";
+  int age = 19;
+  learn() {
+    print("$name of section $sec is learning Flutter !");
+  }
 
-  void printmsg() {
-    print("Hello everyone !");
+  StudentData() {
+    print("Hello world");
   }
 }

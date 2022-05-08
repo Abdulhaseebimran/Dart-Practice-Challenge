@@ -1,21 +1,30 @@
 void main(List<String> args) {
-  Pen mypen = Pen("RED");
-  Pen mypen1 = Pen("Black");
-
-  mypen.printpencolor();
-  mypen1.printpencolor();
+  // Student male = Student();
+  Student name = new Student("HASEEB");
+  name.sleep();
 }
 
-class Pen {
-  String color = "";
-  String type = "";
-  int price = 10;
+class Student {
+  //properties,attributes
+  String name = "";
+  int age = 19;
+  int cnic = 00212;
+  String Edu = "";
 
-  void printpencolor() {
-    print("The pen color is $color");
+  isAlive() {
+    //behaviour
+    print("$name is alive");
   }
 
-  Pen(String color) {
-    this.color = color; // contructor
+  sleep() {
+    print("$name is sleeping");
   }
+
+  Student(name) {
+    // Constructor
+    this.name = name;
+    this.isAlive();
+  
+  }
+                    
 }
